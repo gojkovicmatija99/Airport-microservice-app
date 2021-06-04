@@ -48,5 +48,5 @@ sorted by date of purchase.
 - [Eureka discovery server](https://github.com/gojkovicmatija99/airport-eureka)
 
 <p align="center">
-  <img width="400" height="500" src="https://github.com/gojkovicmatija99/Airport-microservice-app/blob/master/graphviz.png">
+  <img width="400" height="500" src="https://github.com/gojkovicmatija99/Airport-microservice-app/blob/master/graphviz(1).png">
 </p>
