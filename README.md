@@ -53,10 +53,10 @@ sorted by date of purchase.
 </p>
 
 User selects a ticket to buy and after connecting to the ticket service the following actions occur:
-1. The ticket service send a request to the flight service with the flight id to get the ticket information
-2. The ticket service send a request to the user service with the token to get the user info
+1. The ticket service sends a request to the flight service with the flight id to get the ticket information
+2. The ticket service sends a request to the user service with the token to get the user info
 3. The ticket service gets saved into the ticket's database
-4. The ticket service send a message to the message broker to update user's miles
-5. The ticket service send a message to the message broker to update the number of passengers on a flight
+4. The ticket service sends a message to the message broker to update user's miles
+5. The ticket service sends a message to the message broker to update the number of passengers on a flight
 6. When the service is available it updates user's miles
 7. When the service is available it updates the number of passengers on a flight
