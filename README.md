@@ -3,8 +3,7 @@
 Design and implement a system for selling airline tickets in microservice architecture.
 Brief description of the system:
 The system consists of 3 services. These services include the customer, ticket and flight services.
-Functionalities:
-- Service 1 (Customer Service):
+# User service:
   - Registration - name, surname, email, code, passport number (at the end of registration
 an email is sent to the user to verify the email address).
   - Login - the user forwards the email and password, if the login is successful he gets JWT
@@ -17,8 +16,9 @@ and assigned when buying tickets. The ranks are Gold (> 10000 mi), Silver
 (> 1000 mi), Bronze (<1000 mi).
   - Admin - In addition to the regular user, there is also an admin, his role is to add and
 deleting flights. The admin of the parameters has only a username and a password.
+- [See code](https://github.com/gojkovicmatija99/airport-user-service)
 
-- Service 2 (Flight Service):
+# Flight service:
   - Flight list - The flight list is displayed to the user. Flight parameters are airplane,
 starting destination, final destination, flight length, price. The user does not
 show flights whose passenger capacity is full.
@@ -30,8 +30,9 @@ an aircraft only if it is not added to any flight.
 - Add and delete flights - Administrator can add and delete flights,
 however when deleting if at least one ticket has been sold then for
 the given flight performs a refund.
+- [See service](https://github.com/gojkovicmatija99/airport-flight-service)
 
-- Service 3 (Ticket Service):
+# Ticket service:
   - Ticket purchase - The user can buy tickets for existing ones through this service
 flights. When making a purchase, the user chooses the credit card with which he wants to pay. If the capacity for a given flight full, the user will be shown an error when purchasing. Depending on the rank of the user, he gets a discount on the ticket price (gold-20%,
 silver-10%, bronze-0%). After a successful purchase, they are updated for the user
@@ -39,6 +40,12 @@ miles. The information card contains user information, flight information and
 date of purchase.
   - Overview of purchased tickets - The user can see all the tickets he bought,
 sorted by date of purchase.
+- [See service](https://github.com/gojkovicmatija99/airport-ticket-service)
+
+# Other features:
+- [Vue.js frontend](https://github.com/gojkovicmatija99/airport-frontend)
+- [Zull API gateway](https://github.com/gojkovicmatija99/airport-zull)
+- [Eureka discovery server](https://github.com/gojkovicmatija99/airport-eureka)
 
 <p align="center">
   <img width="400" height="500" src="https://github.com/gojkovicmatija99/Airport-microservice-app/blob/master/graphviz.png">
