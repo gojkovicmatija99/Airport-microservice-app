@@ -16,7 +16,7 @@ and assigned when buying tickets. The ranks are Gold (> 10000 mi), Silver
 (> 1000 mi), Bronze (<1000 mi).
   - Admin - In addition to the regular user, there is also an admin, his role is to add and
 deleting flights. The admin of the parameters has only a username and a password.
-- [See code](https://github.com/gojkovicmatija99/airport-user-service)
+- [See service](https://github.com/gojkovicmatija99/airport-user-service)
 
 # Flight service:
   - Flight list - The flight list is displayed to the user. Flight parameters are airplane,
